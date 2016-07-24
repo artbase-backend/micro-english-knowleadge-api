@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Exceptionless;
 
 namespace MicroEnglishKnowleadgeAPI
 {
@@ -38,6 +39,7 @@ namespace MicroEnglishKnowleadgeAPI
             loggerFactory.AddDebug();
 
             app.UseMvc();
+            app.UseExceptionless("lOW0ZhmkjXTwwsTJIy2JvT3ZXG1Nb9r0I5TcFL6o");
         }
     }
 }
